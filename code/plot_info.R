@@ -7,7 +7,8 @@ url <- "https://raw.githubusercontent.com/dackerly/PepperwoodVegPlots/master/sou
 eval(parse(text = getURL(url, followlocation = TRUE, cainfo = system.file("CurlSSL", "cacert.pem", package = "RCurl"))), envir = .GlobalEnv)
 ##########################################################################
 
-setwd('Z:/Box/Desktop/Projects/Veg Plots/PWD_layers')
+# Put the GIS folders in a "bigdata" folder in the project root, which will be pushed to github
+setwd('../bigdata')
 
 library(raster)
 library(rgeos)
